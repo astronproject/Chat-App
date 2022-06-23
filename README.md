@@ -23,7 +23,9 @@ Após preparar o projeto, execute os seguintes comandos:
 
 * Dentro da pasta 'chat-app'
 `npm start`
+
 OBS.: Demora alguns minutos para iniciar o aplicativo.
+
 O acesso pode ser feito via 'http://localhost:3000'
 
 * Dentro da pasta 'chat-server'
@@ -34,14 +36,18 @@ Ao se cadastrar no aplicativo, o segundo fator de autenticação já vem ativado
 
 Para fazer o teste do chat, utilize dois navegadores distintos. A aplicação faz uso do Local Storage para armazenar o token JWT e o Usuário, caso tente fazer login em duas contas com o mesmo navegador, o usuário antigo vai ser sobrescrito.
 
-Deixei duas contas preparadas sem a autenticação de dois fatores ativadas para que possa testar a aplicação:
+Deixei duas contas preparadas sem a autenticação de dois fatores ativada para que possa testar a aplicação:
 
-Conta 01:
+Usuário 01:
 
-email: octaguerra@gmail.com
-senha: guerra
+email: usertestone@test.com
 
-Conta 02:
+senha: usertest
 
-email: marcusguerra@gmail.com
-senha: guerra
+Usuário 02:
+
+email: usertesttwo@test.com
+
+senha: usertest
+
+Caso queira testar a autenticação de dois fatores, cadastre-se com seu email, escolha seu avatar, clique em um chat e faça o logout. Os próximos logins irão te pedir o código do segundo fator de autenticação que será enviado por email.
